@@ -5,8 +5,415 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twin Peaks</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/logo/Twin_Peaks_title.svg" alt="Twin Peaks">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#serie" class="div-link">Série</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#filmes" class="div-link">Filmes</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./src/images/logo/Twin_Peaks_title.svg" alt="Twin Peaks logo">
+            </h1>
+            <h3 class="title--small">
+                O agente do FBI Dale Cooper viaja para a pequena cidade de Twin Peaks para investigar o assassinato da jovem Laura Palmer, e conhece um mundo onde as aparências enganam.
+            </h3>
+        </div>
+    </section>
+    <section class="seasons" id="serie">
+        <h2 class="title--big">Série</h2>
+        <nav class="seasons__tabs">
+            <button data-tab-button="season_1" class="seasons__tabs__button seasons__tabs__button--is-active">
+                Season 1
+            </button>
+            <button data-tab-button="season_2" class="seasons__tabs__button">
+                Season 2
+            </button>
+            <button data-tab-button="the_return" class="seasons__tabs__button">
+                The Return
+            </button>
+        </nav>
+        <ul data-tab-id="season_1" class="seasons__list seasons__list--is-active">
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep1.jpg" alt="S01EP01">
+                <h3>T1 EP.1 - Piloto</h3>
+                <p>
+                    A pequena cidade de Twin Peaks, no noroeste de Washington, é abalada quando o corpo da rainha do baile, Laura Palmer, é descoberto na margem de um rio, embrulhado em plástico.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep2.jpg" alt="S01EP02">
+                <h3>T1 EP.2 - Rastros para lugar algum</h3>
+                <p>
+                    Cooper desfruta do conforto do hotel; Bobby e Mike saem da prisão; Dr. Hayward entrega o relatório da autópsia; Cooper e Truman falam com Josie; Audrey e Donna juram resolver o crime; Sarah tem a visão de um homem grisalho; Dr. Jacoby esconde informações.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep3.jpg" alt="S01EP03">
+                <h3>T1 EP.3 - Zen, ou a arte de pegar um assassino</h3>
+                <p>
+                    O irmão de Ben Horne, Jerry, chega à cidade. Ben e Jerry vão ao Jack Caolho. Audrey deixa pista para Cooper. Andy encontra uma toalha ensanguentada. Josie descobre que Catherine mantém dois livros-caixa. Cooper tem um sonho misterioso.
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep4.jpg" alt="S01EP04">
+                <h3>T1 EP.4 - Descanse em dor</h3>
+                <p>
+                    Audrey diz a Cooper que lhe deixou um bilhete sobre Jack Caolho. Cooper insiste que o sonho é um código para resolver o crime. Bobby, James e Leland fazem escândalo no funeral. Prima idêntica de Laura chega à cidade. Cooper desconfia do Dr. Jacoby.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep5.jpg" alt="S01EP05">
+                <h3>T1 EP.5 - O homem de um braço só</h3>
+                <p>
+                    Cooper questiona Dr. Jacoby, que suspeita de Leo. Hawk vai atrás do homem de um braço só. Sra. Palmer fala sobre sua visão do assassino, é o homem que Cooper viu no sonho. Truman e Cooper descobrem que o pássaro que atacou Laura era de Jacques Renault.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep6.jpg" alt="S01EP06">
+                <h3>T1 EP.6 - Sonhos de Cooper</h3>
+                <p>
+                    A Senhora do Tronco diz a Cooper que havia outro homem seguindo Leo e Jacques na noite do crime. Cooper, Hawk e Truman encontram Waldo na cabana de Jacques. Cooper encontra ficha de pôquer quebrada. Audrey começa a trabalhar no balcão de perfumes.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep7.jpg" alt="S01EP07">
+                <h3>T1 EP.7 - Tempo de percepção</h3>
+                <p>
+                    Audrey descobre que o balcão de perfumes está sendo usado como posto de recrutamento para o Jack Caolho. Cooper e Big Ed vão disfarçados ao Jack Caolho. Os trilhos de cortina de Nadine são rejeitados. Leo volta os olhos para Bobby e o pássaro Waldo.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season1/ep8.jpg" alt="S01EP08">
+                <h3>T1 EP.8 - A última noite</h3>
+                <p>
+                    Audrey é contratada no Jack Caolho. Cooper faz Jacques revelar os detalhes da última noite de Laura na cabana. Andy salva a vida de Truman e prende Renault. Cooper encontra a cocaína plantada na moto de James. Leo prende Shelly no moinho e ateia fogo.
+                </p>
+            </li>
+        </ul>
+        <ul data-tab-id="season_2" class="seasons__list">
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep1.jpg" alt="S02EP01">
+                <h3>T2 EP.1 - Que o gigante esteja com você</h3>
+                <p>
+                    Ferido, Cooper vê gigante que dá pistas sobre a morte de Laura. Shelly e Pete recuperam-se do incêndio. Josie e Catherine estão desaparecidos. A atitude de Leland muda com a cor de seu cabelo. Dr. Jacoby se recupera, mas não lembra quem matou Jacques.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep2.jpg" alt="S02EP02">
+                <h3>T2 EP.2 - Coma</h3>
+                <p>
+                    Albert determina que nem Leo nem Jacques mataram Laura, mas não encontrar pista sobre quem atirou em Cooper. Cooper diz que devem encontrar o terceiro homem, o grisalho, que acredita ser Bob. Shelly visita Leo no hospital. Leland tem uma revelação.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep3.jpg" alt="S02EP03">
+                <h3>T2 EP.3 - O homem atrás do espelho</h3>
+                <p>
+                    Ronette é atacada. Jean Renault planeja chantagear Ben para libertar Audrey. Albert e Truman têm um confronto. Lucy revela que houve outro homem em sua vida. Shelly decide não testemunhar contra Leo. Leland oferece uma pista na busca por Killer Bob.
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep4.jpg" alt="S02EP04">
+                <h3>T2 EP.4 - O diário secreto de Laura</h3>
+                <p>
+                    Leland confessa ter matado Jacques Renault. Andy quer fazer um novo espermograma. Jean pede que Ben arme uma armadilha para Cooper em troca de Audrey. Josie volta a Twin Peaks. Cooper pede ajuda a Donna. Cooper pede ajuda do Bookhouse.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep5.jpg" alt="S02EP05">
+                <h3>T2 EP.5 - A maldição da orquídea</h3>
+                <p>
+                    Cooper descobre que se esqueceu da mensagem debaixo da cama. Sternwood declara que Leo não está apto para o julgamento. Um homem misterioso oferece a Ben um bom valor por Ghostwood. Os resultados dos exames de Andy apresentam melhora.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep6.jpg" alt="S02EP06">
+                <h3>T2 EP.6 - Demônios</h3>
+                <p>
+                    James salva as meninas de um Harold atormentado. Cooper leva Audrey para casa. Donna tenta convencer Truman de que Harold Smith está com o diário de Laura. O chefe de Cooper chega com uma mensagem perturbadora. Ben chama Leland de volta ao trabalho.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep7.jpg" alt="S02EP07">
+                <h3>T2 EP.7 - Almas solitárias</h3>
+                <p>
+                    Cooper e homem de um braço só inspecionam hóspedes no Great Northern. Hawk encontra Harold Smith morto, com misteriosa nota de suicídio e o diário despedaçado. Audrey confronta o pai sobre Jack Caolho. Norma vê Nadine transformada pela primeira vez.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep8.jpg" alt="S02EP08">
+                <h3>T2 EP.8 - Dirigindo com uma garota morta</h3>
+                <p>
+                    A mãe de Norma chega com notícia de que se casou novamente. Cooper diz a Leland que prenderam Ben pelo assassinato de Laura. Pete diz a Ben que Catherine está viva e quer fazer um acordo. Cooper fica diante do assassino sem perceber.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep9.jpg" alt="S02EP09">
+                <h3>T2 EP.9 - Lei arbitrária</h3>
+                <p>
+                    Cooper pede 24 horas para encerrar o caso. Cooper recebe uma página que falta no diário de Laura, descrevendo o sonho que ele teve. O homem de um braço só diz a Cooper que tem todas as pistas necessárias. Cooper convoca todos para um confronto final.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep10.jpg" alt="S02EP10">
+                <h3>T2 EP.10 - Disputa entre irmãos</h3>
+                <p>
+                    Leland é enterrado. Dr. Jacoby volta do Havaí. Cooper se prepara para partir de Twin Peaks. Hank e Ernie encontram Jean Renault. Audrey e Cooper se despedem, e Cooper conta a ela sobre a morte de uma mulher que ele amou. Cooper é aceito na Bookhouse.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep11.jpg" alt="S02EP11">
+                <h3>T2 EP.11 - Baile de máscaras</h3>
+                <p>
+                    Sra. Briggs fala sobre o desaparecimento do marido na floresta. James é contratado por mulher misteriosa chamada Evelyn Marsh. Dick pega um órfão chamado Nicky. Earle contata Cooper com uma mensagem sinistra. Dougie Milford se casa com Lanna Budding.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep12.jpg" alt="S02EP12">
+                <h3>T2 EP.12 - A viúva negra</h3>
+                <p>
+                    Ben coloca Bobby sob proteção para destruir Hank e Jean. Estado mental de Ben começa a se fragilizar. Andy e Dick descobrem vida conturbada de Nicky. Dougie Milford morre na lua de mel, e o major culpa Lana. Cooper encontra drogas em Dead Dog Farms.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep13.jpg" alt="S02EP13">
+                <h3>T2 EP.13 - Xeque-mate</h3>
+                <p>
+                    Briggs não se lembra onde foi levado, mas agora tem tatuagem no pescoço. Andy e Dick invadem arquivos de Nicky. Mike e Nadine começam a ter um caso. Ben mergulha em sua vida de fantasia. Cooper é feito refém por Jean Renault. Leo Johnson volta à vida.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep14.jpg" alt="S02EP14">
+                <h3>T2 EP.14 - Jogada dupla</h3>
+                <p>
+                    Doc Hayward conta verdadeira história do passado de Nicky. Cooper revela rivalidade entre ele e Earle. Diz que os dois eram parceiros quando Cooper se apaixonou pela mulher de Earle. Earle enlouqueceu, matou Caroline e feriu Cooper. Sr. Marsh é morto.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep15.jpg" alt="S02EP15">
+                <h3>T2 EP.15 - Escravos e senhores</h3>
+                <p>
+                    Polícia procura James pelo assassinato de Marsh. Bobby e Shelly contam a Truman que Leo escapou e Bobby revela que viu Hank atirar em Leo na noite do incêndio do moinho. Dr. Jacoby, Audrey, Bobby e Jerry tentam acabar com a vida fantasiosa de Ben.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep16.jpg" alt="S02EP16">
+                <h3>T2 EP.16 - A mulher condenada</h3>
+                <p>
+                    Truman coloca Hank na prisão pela tentativa de assassinato de Leo, enquanto Hank denuncia Josie pelo assassinato de Andrew Packard. Albert revela que Josie atirou em Cooper. Earle envia poema a Donna, Shelly e Audrey. James vai embora de Twin Peaks.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep17.jpg" alt="S02EP17">
+                <h3>T2 EP.17 -  Feridas e cicatrizes</h3>
+                <p>
+                    Harry cai em depressão. Corpo de Josie contém mais perguntas que respostas. A irmã de Norma, Annie, chega a Twin Peaks. Wheeler e Audrey ficam juntos. Windom Earle visita Donna. A Senhora do Tronco e Briggs têm tatuagens parecidas e mostram a Cooper.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep18.jpg" alt="S02EP18">
+                <h3>T2 EP.18 - Nas asas do amor</h3>
+                <p>
+                    Audrey e Wheeler começam relacionamento. Cole reintegra Cooper ao FBI. Earle planeja matar vencedora do Miss Twin Peaks. Donna vê Eileen fazendo visita a Ben Horne. Annie reconhece que as duas tatuagens vêm da Caverna da Coruja. Earle visita Audrey.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep19.jpg" alt="S02EP19">
+                <h3>T2 EP.19 - Variações sobre relações</h3>
+                <p>
+                    Cooper encontra o misterioso petróglifo. Pete ajuda Catherine a abrir caixa da charada. Lana quer que Milford manipule Miss Twin Peaks. Cooper encontra poema que Earle mandou para as meninas. Briggs concorda em examinar o trabalho do Projeto Bluebook.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep20.jpg" alt="S02EP20">
+                <h3>T2 EP.20 - O caminho até o Black Lodge</h3>
+                <p>
+                    Cooper liga para Shelly, Donna e Audrey para avisar sobre Earle. Donna acha fotos de sua mãe e Ben Horne. Wheeler é chamado para uma emergência. Doc Hayward diz a Ben para ficar longe de Eileen. Os moradores da cidade têm estranhos tremores nas mãos.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep21.jpg" alt="S02EP21">
+                <h3>T2 EP.21 - Miss Twin Peaks</h3>
+                <p>
+                    Windom Earle está de olho no concurso Miss Twin Peaks. Lucy escolhe pai para seu bebê. Catherine e Andrew encontram chave misteriosa. O concurso Miss Twin Peaks termina em caos. Windom Earle sequestra Annie. Andy decifra charada da Caverna da Coruja.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/season2/ep22.jpg" alt="S02EP22">
+                <h3>T2 EP.22 - Além da vida e da morte</h3>
+                <p>
+                    O agente Cooper segue Windom Earle e Annie até as profundezas do Black Lodge. Dr. Hayward e Ben Horne têm um confronto final. O Dr. Jacoby e a Sra. Palmer têm uma mensagem para o major Briggs. Cooper enfrenta seu destino no Black Lodge.
+                </p>
+            </li>
+        </ul>
+        <ul data-tab-id="the_return" class="seasons__list">
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep1.jpg" alt="S03EP01">
+                <h3>TR EP.1 - Parte 1</h3>
+                <p>
+                    Meu tronco tem uma mensagem pra você.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep2.jpg" alt="S03EP02">
+                <h3>TR EP.2 - Parte 2</h3>
+                <p>
+                    As estrelas se voltam e o tempo se apresenta.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep3.jpg" alt="S03EP03">
+                <h3>TR EP.3 - Parte 3</h3>
+                <p>
+                    Chame o socorro.
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep4.jpg" alt="S03EP04">
+                <h3>TR EP.4 - Parte 4</h3>
+                <p>
+                    ...traz de volta lembranças.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep5.jpg" alt="S03EP05">
+                <h3>TR EP.5 - Parte 5</h3>
+                <p>
+                    Arquivos do caso.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep6.jpg" alt="S03EP06">
+                <h3>TR EP.6 - Parte 6</h3>
+                <p>
+                    Não morra.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep7.jpg" alt="S03EP07">
+                <h3>TR EP.7 - Parte 7</h3>
+                <p>
+                    Há um corpo, sim.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep8.jpg" alt="S03EP08">
+                <h3>TR EP.8 - Parte 8</h3>
+                <p>
+                    Você tem fogo?
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep9.jpg" alt="S03EP09">
+                <h3>TR EP.9 - Parte 9</h3>
+                <p>
+                    Esta é a cadeira.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep10.jpg" alt="S03EP10">
+                <h3>TR EP.10 - Parte 10</h3>
+                <p>
+                    É a Laura.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep11.jpg" alt="S03EP11">
+                <h3>TR EP.11 - Parte 11</h3>
+                <p>
+                    Há fogo aonde você vai.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep12.jpg" alt="S03EP12">
+                <h3>TR EP.12 - Parte 12</h3>
+                <p>
+                    Que comece a festa.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep13.jpg" alt="S03EP13">
+                <h3>TR EP.13 - Parte 13</h3>
+                <p>
+                    Que história é essa, Charlie?
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep14.jpg" alt="S03EP14">
+                <h3>TR EP.14 - Parte 14</h3>
+                <p>
+                    Somos como o Sonhador.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep15.jpg" alt="S03EP15">
+                <h3>TR EP.15 - Parte 15</h3>
+                <p>
+                    Há medo em deixar partir.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep16.jpg" alt="S03EP16">
+                <h3>TR EP.16 - Parte 16</h3>
+                <p>
+                    Sem bater, sem campainha.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep17.jpg" alt="S03EP17">
+                <h3>TR EP.17 - Parte 17</h3>
+                <p>
+                    O passado dita o futuro.
+                </p>
+            </li>
+            <li class="seasons__list__item">
+                <img src="./dist/images/episodes/the_return/ep18.jpg" alt="S03EP18">
+                <h3>TR EP.18 - Parte 18</h3>
+                <p>
+                    Qual é o seu nome?
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="movies" id="filmes">
+        <h2 class="title--big">Filmes</h2>
+        <ul class="movies__list">
+            <li class="movies__list__item">
+                <img src="./src/images/movies/1989.jpg" alt="1989">
+                <strong class="title--small">Twin Peaks: International Pilot (1989)</strong>
+                <p class="text">
+                    Uma versão autônoma do piloto para o mistério imortal de David Lynch sobre a vida de uma cidade pequena aparentemente típica. A versão Européia é vinte minutos mais longa do que o piloto de TV, com um final diferente adicionado para dar um encerramento para a história.
+                </p>
+            </li>
+            <li class="movies__list__item">
+                <img src="./src/images/movies/fire_walk.jpg" alt="Fire Walk with Me">
+                <strong class="title--small">Twin Peaks: Fire Walk with Me (1992)</strong>
+                <p class="text">
+                    Na cidade de Twin Peaks, a jovem Laura Palmer vive seus últimos dias entre indecisões amorosas que a levam a alternar como amantes dois colegas de escola, o problemático Bobby e o introspectivo James.
+                </p>
+            </li>
+            <li class="movies__list__item">
+                <img src="./src/images/movies/missing.jpg" alt="The Missing Pieces">
+                <strong class="title--small">Twin Peaks: The Missing Pieces (2014)</strong>
+                <p class="text">
+                    Twin Peaks: The Missing Pieces é uma compilação de cenas, em formato de filme, com direção de David Lynch e argumento do próprio, em coautoria com Robert Engels.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>

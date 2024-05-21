@@ -1,5 +1,50 @@
-$bgColor: rgb(0, 225, 255);
+@use 'hero';
+@use 'variaveis';
+@use 'seasons';
+@use 'movies';
+@use 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo2;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoSecundaria;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize)
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(28px);
 }

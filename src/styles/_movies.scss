@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.movies {
+    background-color: variaveis.$corDeFundo3;
+    padding: 5.6vw;
+    padding-bottom: 8px;
+    padding-top: 70px;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        &__item {
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            strong {
+                display: block;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}

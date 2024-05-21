@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.hero {
+    padding: 8vw;
+    min-height: 10vh;
+    background-image: url(../images/twin_peaks.jpg);
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        max-width: 1080px;
+
+        &__branding {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title--small {
+            color: variaveis.$corTextoPrincipal;
+            margin-bottom: 300px;
+        }
+    }
+}

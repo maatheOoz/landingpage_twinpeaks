@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.header {
+    background-color: variaveis.$corTextoSecundaria;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-family: "Roboto Slab", serif;
+                color: variaveis.$corTextoPrincipal;
+                font-size: 24px;
+            }
+        }
+    }
+}

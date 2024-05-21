@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+.seasons {
+    padding: 2vw 5.6vw;
+    background-color: variaveis.$corDeFundo;
+    min-height: 50vw;
+    padding-top: 70px;
+
+    h2 {
+        color: variaveis.$corTextoPrincipal;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    &__list {
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            list-style-type: none;
+            color: variaveis.$corTextoPrincipal;
+
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            color: variaveis.$corTextoPrincipal;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 12px 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is-active {
+                border-color: variaveis.$corTextoPrincipal;
+            }
+        }
+    }
+}
